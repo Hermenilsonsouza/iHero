@@ -17,6 +17,8 @@ export default function Home() {
     const newMoster = useSelector( state => state.ListReducers.MonsterList)
     const heros = useSelector(state => state.ListReducers.HerosList);
 
+   
+
     useEffect(()=>{
   
       firebase.auth().onAuthStateChanged(function(user) {
@@ -29,6 +31,8 @@ export default function Home() {
         });
         
   },[])
+
+  //---------------------Rotina websocket-----------------------------------
     
   useEffect(()=>{
     const socket = io('https://zrp-challenge-socket.herokuapp.com', {
@@ -48,6 +52,8 @@ export default function Home() {
   },[])
 
   const [event, setEvent] = useState();
+
+   //---------------- config para escolha de herois-------------------------------
 
   useEffect(()=>{
    
