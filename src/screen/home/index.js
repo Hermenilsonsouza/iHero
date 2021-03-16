@@ -85,7 +85,7 @@ export default function Home() {
     return(
         <ImageBackground source={require('../../img/Onu.jpg')} style={styles.container}>
           <View style={styles.containerTitle}>
-            <Text style={styles.title}>Alertas de Ameaças </Text>
+            <Text style={styles.title}>Alerta de Ameaças </Text>
           </View>
         <View style={styles.line1}>
 
